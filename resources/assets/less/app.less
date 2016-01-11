@@ -1,0 +1,371 @@
+@import "bootstrap/bootstrap";
+
+@btn-font-weight: 300;
+@font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-y: scroll;
+}
+
+/*
+body {
+    margin-bottom: 100px;
+}
+*/
+
+* { transition: all 0.3s ease-out; }
+
+body, label, .checkbox label, h1, h2 {
+	font-weight: 300;
+}
+
+.jumbotron {
+    background-color: #3399CC;
+    background: url("/img/blue-abstract-background.jpg") no-repeat center center;
+    background-size: cover;
+    color: #d9edf7;
+    padding: 18px 20px 12px 10px;
+}
+
+.jumbotron h1 {
+    color: #ffffff;
+    font-size: 50px;
+    padding-top: 12px;
+}
+
+blockquote footer, blockquote small, blockquote .small {
+    /* color: #eeeeee; */
+}
+
+blockquote {
+    padding: 0px 15px;
+    margin: 0 0 6px;
+    border-left: 3px solid #eeeeee;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-bottom: 0;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #33BEF5;
+    font-weight: bold;
+}
+
+.panel {
+    border-radius: 0px;
+}
+
+#map-outer {
+    height: 440px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+#map-container {
+    height: 400px;
+}
+@media all and (max-width: 991px) {
+    #map-outer {
+        height: 750px;
+    }
+}
+
+.jumbotron .bg-primary {
+    /*opacity: 0.85;*/
+    width: 100%;
+    text-align: center;
+    margin: 35px auto;
+    margin-top: 5px;
+    /* E8910C */
+    background-color: #E8910C;
+    padding: 30px;
+    padding-bottom: 10px;
+
+    transform: rotate(-2deg);
+    box-shadow: 9px 9px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.col-md-1.leanne-photo {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.mdash {
+    visibility: hidden;
+}
+
+.jumbotron .slogun {
+    text-align: center;
+}
+
+.img-leanne, .img-circle {
+    padding: 6px;
+    width: 120px;
+}
+
+@media all and (max-width: 504px) {
+
+    .img-leanne, .img-circle {
+        padding: 6px;
+        width: 220px;
+    }
+
+    .col-md-1.leanne-photo {
+        text-align: center;
+    }
+
+    .col-md-1.leanne-photo img {
+        margin-right: 0;
+    }
+
+    .mdash {
+        visibility: hidden;
+    }
+
+    .container h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .head-testimonials {
+        text-align: left;
+    }
+
+    .brands {
+        height: auto;
+        padding-bottom: 30px;
+    }
+}
+
+h1 .glyphicon {
+    top: 3px;
+}
+
+@media (min-width: 992px) {
+    .jumbotron .bg-primary {
+        width: 56%;
+    }
+
+    .container h1 {
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .hideme {
+        visibility: none;
+    }
+
+    .brands {
+        margin-top: 10px;
+        /*height: 107px;*/
+        background: #ebeced;
+        vertical-align: middle;
+    }
+
+    .mdash {
+        visibility: visible;
+    }
+
+    .jumbotron .slogun {
+        text-align: right;
+    }
+
+    h1 .glyphicon {
+        top: 6px;
+    }
+}
+
+hr.jt {
+    border: 0;
+    height: 1px;
+    background-color: #1694EB;
+}
+
+.page-header {
+    margin: 10px 0 16px;
+}
+
+.img-circle-dashed {
+    border-radius: 50%;
+    transform: rotate(10deg);
+    padding: 2px;
+    border: 2px dashed #564337;
+}
+
+.services {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.services p {
+    font-size: 15px;
+}
+
+.brands {
+    margin-top: 10px;
+    background: #ebeced;
+    vertical-align: middle;
+    padding-bottom: 30px;
+}
+
+.brands img {
+    padding-top: 20px;
+    filter: grayscale(100%);
+    background-color: #eeeeee;
+}
+
+.container-footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 20px;
+    /* margin-top: 30px; */
+    background-color: #564337;
+    color: #d9d4d0;
+    font-size: 17px;
+}
+
+.footer p { }
+
+.footer a {
+    color: #d9d4d0;
+    /* text-decoration: underline; */
+}
+
+.footer h1 {
+    padding-bottom: 15px;
+    font-size: 45px;
+    text-align: center;
+}
+
+/*
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    height: 60px;
+    background-color: #564337;
+}
+*/
+
+.container .text-muted {
+    margin: 20px 0;
+    color: #d9d4d0;
+    text-align: center;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+/*
+.line {
+    text-align: center;
+    border-top: 1px dashed #1694EB;
+    height: 28px;
+    background: url(/img/scissors.png) no-repeat 85px -18px;
+}
+.line:after {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    vertical-align: top;
+}
+*/
+
+.thumbnail.with-caption {
+    display: inline-block;
+    background: #f5f5f5;
+}
+.thumbnail.with-caption p {
+    margin: 0;
+    padding-top: 0.5em;
+}
+.thumbnail.with-caption small:before {
+    content: '\2014 \00A0';
+}
+.thumbnail.with-caption small {
+    width: 100%;
+    text-align: right;
+    display: inline-block;
+    color: #999;
+}
+
+.glyphicon-scissors { &:before { content: "\e226"; } }
+
+.phonenumber {
+    text-decoration: underline;
+}
+
+.badge {
+    background-color: #3399CC;
+    padding: 4px 17px;
+    font-size: 14px;
+}
+
+/*
+.ribbon {
+    background: #A83736;
+    border-left: 1px dashed #aaa;
+    border-right: 1px dashed #aaa;
+    border-radius: 0 0 0 0;
+    box-shadow: 5px 0 0 #A83736, -5px 0 0 #A83736;
+    height: 120px;
+    margin: 0 5px;
+    position: absolute;
+    top: 0;
+    right: 24%;
+    width: 90px;
+    -webkit-filter: drop-shadow(0 2px 5px hsla(0,0%,0%,.5));
+    margin-left: 50px;
+    z-index: 10;
+}
+.ribbon:after, .ribbon:before {
+    border-top: 15px solid #A83736;
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 100%;
+    width: 0;
+}
+.ribbon:after {
+    border-left: 50px solid transparent;
+    right: -6px;
+}
+.ribbon:before {
+    border-right: 50px solid transparent;
+    left: -6px;
+}
+*/
+
+.img-circle-dashed:hover {
+    transform: rotate(30deg);
+}
+
+.img-leanne:hover {
+    transform: rotate(30deg);
+}

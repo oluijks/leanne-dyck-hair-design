@@ -1,0 +1,29 @@
+MySQL 5.5 database added.  Please make note of these credentials:
+
+       Root User: adminmSlr88p
+   Root Password: Uk5HYDLHLMFR
+   Database Name: development
+
+Connection URL: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/
+
+You can manage your new MySQL database by also embedding phpmyadmin.
+The phpmyadmin username and password will be the same as the MySQL credentials above.
+
+http://development-ldhd.rhcloud.com/
+
+
+========================================================================================================================
+
+MySQL 5.5 database added.  Please make note of these credentials:
+
+       Root User: adminViZlyUF
+   Root Password: Il7FUl4inWyM
+   Database Name: leanne
+
+Connection URL: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/
+
+You can manage your new MySQL database by also embedding phpmyadmin.
+The phpmyadmin username and password will be the same as the MySQL credentials above.
+
+
+http://leanne-ldhd.rhcloud.com/
