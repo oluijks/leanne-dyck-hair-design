@@ -1,7 +1,8 @@
-<?php namespace LDHD\Events;
+<?php
 
-abstract class Event {
+namespace LDHD\Events;
 
-	//
-
+abstract class Event
+{
+    //
 }

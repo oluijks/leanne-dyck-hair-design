@@ -1,29 +1,15 @@
-<?php namespace LDHD\Http\Controllers;
+<?php
 
-class PageController extends Controller {
+namespace LDHD\Http\Controllers;
 
-	/*
-	|--------------------------------------------------------------------------
-	| Welcome Controller
-	|--------------------------------------------------------------------------
-	|
-	| This controller renders the "marketing page" for the application and
-	| is configured to only allow guests. Like most of the other sample
-	| controllers, you are free to modify or remove it as you desire.
-	|
-	*/
+use Illuminate\Http\Request;
 
-	/**
-	 * Create a new controller instance.
-	 *
-	 * @return void
-	 */
-	public function __construct()
-	{
-		// $this->middleware('guest');
-	}
+use LDHD\Http\Requests;
+use LDHD\Http\Controllers\Controller;
 
-	/**
+class PageController extends Controller
+{
+    /**
 	 * Show the application about screen to the user.
 	 *
 	 * @return Response
@@ -142,5 +128,4 @@ class PageController extends Controller {
 	{
 		return view('pages.packages');
 	}
-
 }

@@ -2,86 +2,94 @@
 
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| Routes File
 |--------------------------------------------------------------------------
 |
-| Here is where you can register all of the routes for an application.
+| Here is where you will register all of the routes in an application.
 | It's a breeze. Simply tell Laravel the URIs it should respond to
 | and give it the controller to call when that URI is requested.
 |
 */
 
-Route::get('/', [
-	'as' => 'welcome',
-	'uses' => 'WelcomeController@index'
-]);
+/*
+|--------------------------------------------------------------------------
+| Application Routes
+|--------------------------------------------------------------------------
+|
+| This route group applies the "web" middleware group to every route
+| it contains. The "web" middleware group is defined in your HTTP
+| kernel and includes session state, CSRF protection, and more.
+|
+*/
 
-Route::get('home', [
-	'as' => 'home',
-	'uses' => 'HomeController@index'
-]);
+Route::group(['middleware' => ['web']], function () {
+    Route::get('/', [
+    	'as' => 'welcome',
+    	'uses' => 'WelcomeController@index'
+    ]);
 
-Route::get('about', [
-	'as' => 'about',
-	'uses' => 'PageController@about'
-]);
+    Route::get('home', [
+    	'as' => 'home',
+    	'uses' => 'HomeController@index'
+    ]);
 
-Route::get('contact', [
-	'as' => 'contact',
-	'uses' => 'PageController@contact'
-]);
+    Route::get('about', [
+    	'as' => 'about',
+    	'uses' => 'PageController@about'
+    ]);
 
-Route::get('services', [
-	'as' => 'services',
-	'uses' => 'PageController@services'
-]);
+    Route::get('contact', [
+    	'as' => 'contact',
+    	'uses' => 'PageController@contact'
+    ]);
 
-Route::get('products', [
-	'as' => 'products',
-	'uses' => 'PageController@products'
-]);
+    Route::get('services', [
+    	'as' => 'services',
+    	'uses' => 'PageController@services'
+    ]);
 
-Route::get('gallery', [
-	'as' => 'gallery',
-	'uses' => 'PageController@gallery'
-]);
+    Route::get('products', [
+    	'as' => 'products',
+    	'uses' => 'PageController@products'
+    ]);
 
-Route::get('sitemap', [
-	'as' => 'sitemap',
-	'uses' => 'PageController@sitemap'
-]);
+    Route::get('gallery', [
+    	'as' => 'gallery',
+    	'uses' => 'PageController@gallery'
+    ]);
 
-Route::get('terms', [
-	'as' => 'terms',
-	'uses' => 'PageController@terms'
-]);
+    Route::get('sitemap', [
+    	'as' => 'sitemap',
+    	'uses' => 'PageController@sitemap'
+    ]);
 
-Route::get('privacy', [
-	'as' => 'privacy',
-	'uses' => 'PageController@privacy'
-]);
+    Route::get('terms', [
+    	'as' => 'terms',
+    	'uses' => 'PageController@terms'
+    ]);
 
-Route::get('testimonials', [
-	'as' => 'testimonials',
-	'uses' => 'PageController@testimonials'
-]);
+    Route::get('privacy', [
+    	'as' => 'privacy',
+    	'uses' => 'PageController@privacy'
+    ]);
 
-Route::get('certificates', [
-	'as' => 'certificates',
-	'uses' => 'PageController@certificates'
-]);
+    Route::get('testimonials', [
+    	'as' => 'testimonials',
+    	'uses' => 'PageController@testimonials'
+    ]);
 
-Route::get('specials', [
-	'as' => 'specials',
-	'uses' => 'PageController@specials'
-]);
+    Route::get('certificates', [
+    	'as' => 'certificates',
+    	'uses' => 'PageController@certificates'
+    ]);
 
-Route::get('packages', [
-	'as' => 'packages',
-	'uses' => 'PageController@packages'
-]);
+    Route::get('specials', [
+    	'as' => 'specials',
+    	'uses' => 'PageController@specials'
+    ]);
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+    Route::get('packages', [
+    	'as' => 'packages',
+    	'uses' => 'PageController@packages'
+    ]);
+});
